@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="./image/colAdmin.png" type="imageIcon" >
+<link rel="stylesheet" href="./css/coladmin.css">
+ <title>College Admin</title>
+</head>
+  <body>
+    <header> 
+      <div class="Menubar"> 
+        <img class="logo" src="./image/wmsulogo.png" alt="wmsulogo"> 
+            <h1>  College Administrator</h1> 
+                  <div class="menus"  >
+                    <a href="./index.html" > Log out</a>  
+                    <a id="OpenTools" >Tools </a>
+                    <a id="Notifs" > <img src="./image/bell2.png" alt="notif Bell" width="33" height="33"> </a>
+                  </div> 
+      </div> 
+    </header>
+
+    <div class="main">
+      
+                
+            <div id="AdminTool" class="AdTool"> 
+              <div class="AdToolinner">
+                <div class="AdTool-header">
+                  <img class="ToolPic" src="./image/colAdmin.png" alt="about us temp logo" > 
+                </div>
+                      <div class="HeadText">
+                        <h2>College Admin Dashboard</h2>
+                      </div> 
+                    <div class="AdTool-body">
+                      <div class="AdminToolls">
+                        <div class="AdminMenu">
+                         <button class="AdminMenulinks" onmouseover="contentoptn(event, 'Home')"> <img src="./image/HomeAdminTool.png" alt="" width="30px" height="30px" style="position: relative; top: 2px;"> Home</button>
+                         <button class="AdminMenulinks" onmouseover="contentoptn(event, 'AddLab')"> <img src="./image/CreateAdminTool.png" alt="" width="30px" height="30px" style="position: relative; top: 2px;"> Add Lab Attendant</button>
+                         <button class="AdminMenulinks" onmouseover="contentoptn(event, 'CreateLab')"> <img src="./image/LabAdmin.png" alt="" width="30px" height="30px" style="position: relative; top: 2px;"> Create Lab</button> 
+                         <button class="AdminMenulinks" onmouseover="contentoptn(event, 'EditCollegeAdmin')"> <img src="./image/EditAdminTool.png" alt="" width="30px" height="30px" style="position: relative; top: 2px;"> Edit</button>
+                          
+                       </div>
+
+                       <div id="Home" class="AdminMenucontent">
+                         <h3>Home : <u>  Institute of Computer Studies</u></h3>
+                         
+                                <table id="HomeColTool">
+                                  <tr>
+                                    <th class="labid">id</th>
+                                    <th class="labName">Lab Attendant Name</th>
+                                    <th class="lablCourse">Room Number </th>
+                                    <th class="labNum">Units</th> 
+                                    <th class="labIndi">Online</th>
+                                  </tr>
+                                  <tr>
+                                    <td>1801</td>
+                                    <td style="color: blue;" id="ViewProfile7">Prof. Jaydee Ballaho</td> 
+                                    <td>RN908</td>
+                                    <td>15</td>
+                                    <td >Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                  </tr> 
+                                  <tr>
+                                    <td>1803</td>
+                                    <td  style="color: blue;" id="ViewProfile8">Prof. Lucy Sadiwa </td> 
+                                    <td>RN909</td>
+                                    <td>15</td>
+                                    <td>Offline <img src="./image/onnline.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                  </tr> 
+                                 
+                                </table>
+                                <hr>
+                                 <table id="HomeAdminTool">
+                                              <tr>
+                                                
+                                                <th class="ColName">Id</th>
+                                                <th class="ColName">User Name</th> 
+                                                <th class="ColName">Pc Number</th> 
+                                                <th class="ColName">Time</th> 
+                                                <th class="ColNum">Room Number</th> 
+                                                <th class="ColIndi">Status</th>
+                                                 <th class="ColIndi">Other</th>
+                                              </tr>
+                                              <tr>
+                                                <td>1701</td>
+                                                <td style="color: blue;" id="ViewProfile1" >Andromedae siruis</td> 
+                                                <td>PC1</td>
+                                                <td>30:00  Mins</td>
+                                                <td>RN908</td> 
+                                                <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                <td style="color: red;"> <a id="EditStuds"> Edit</a> </td>
+                                              </tr>  <tr>
+                                                <td>1702</td>
+                                                <td style="color: blue;" id="ViewProfile2">Aaron Melano</td> 
+                                                <td>PC2</td>
+                                                <td>27:00  Mins</td>
+                                                <td>RN908</td> 
+                                                <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                <td style="color: red;"> <a id="EditStudss" > Edit</a> </td>
+                                              </tr>
+                                              <tr>
+                                                <td>1703</td>
+                                                <td style="color: blue;" id="ViewProfile3">Alasa Jovelyn</td> 
+                                                <td>PC3</td>
+                                                <td>15:00  Mins</td>
+                                                <td>RN908</td> 
+                                                <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                <td style="color: red;"> <a id="EditStudsss"> Edit</a> </td>
+                                              </tr>
+                                              <tr>
+                                                <td>1704</td>
+                                                <td style="color: blue;" id="ViewProfile4">lester Dela Torre</td> 
+                                                <td>PC4</td>
+                                                <td>10:00  Mins</td>
+                                                <td>RN908</td> 
+                                                <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                <td style="color: red;"> <a id="EditStudssss"> Edit</a> </td>
+                                              </tr>
+                                                <tr>
+                                                <td>1705</td>
+                                                <td style="color: blue;" id="ViewProfile5">Oroscco Pilar</td> 
+                                                <td>PC5</td>
+                                                <td>30:00  Mins</td>
+                                                <td>RN908</td> 
+                                                <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                <td style="color: red;"> <a id="EditStudsssss"> Edit</a> </td>
+                                              </tr>
+                                              <tr>
+                                                <td>1706</td>
+                                                <td style="color: blue;" id="ViewProfile6">Ceejay ceejay</td> 
+                                                <td>PC6</td>
+                                                <td>30:00  Mins</td>
+                                                <td>RN908</td> 
+                                                <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                <td style="color: red;"> <a id="EditStudssssss"> Edit</a> </td>
+                                              </tr>
+
+                                          </table>  
+                       </div>
+
+                       <div id="AddLab" class="AdminMenucontent">
+                         <h3>Create Lab Admin</h3>
+                         <select name="RoomId" id="wala" style="padding: 10px 23px; ">
+                          <option value="None">Appoint Lab ID Admin</option>
+                          <option value="5">ID 1802</option>
+                          <option value="5">ID 1804</option>
+                          <option value="5">ID 1805</option> 
+                     </select>
+                          <br><br>
+                         <input type="text" id="LabFname" value="First Name" style="padding: 10px 20px; ">
+                         <br><br>
+                         <input type="text" id="LabFname" value="Last Name" style="padding: 10px 20px; ">
+                         <br><br>  
+                         <select name="RoomId" id="wala" style="padding: 10px 23px; ">
+                          <option value="None">Select Room Number</option>
+                          <option value="5">RN 910</option>
+                          <option value="5">RN 911</option>
+                          <option value="5">RN 912</option> 
+                     </select>
+                         <input type="submit" onclick="msgapp()" value="Appoint" style="padding: 10px 10px; border: none; background-color: aqua;">
+                       </div>
+
+                       <div id="CreateLab" class="AdminMenucontent">
+                        <h3>Create Labolatory</h3>
+                        <select name="RoomId" id="wala" style="padding: 10px 23px; ">
+                          <option value="None">Select Room Number</option>
+                          <option value="5">RN 910</option>
+                          <option value="5">RN 911</option>
+                          <option value="5">RN 912</option> 
+                     </select> 
+                     <select name="RoomId" id="wala" style="padding: 10px 23px; ">
+                      <option value="None">Lab Admin</option>
+                      <option value="5">Prof, Gahdmar Bilamide</option>
+                      <option value="5">Prof, Marvic Lines</option>
+                      <option value="5">Prof, Salimar Tahil</option> 
+                 </select><br><br>
+                     <select name="RoomId" id="wala" style="padding: 10px 23px; ">
+                      <option value="None">Select Number of Units</option>
+                      <option value="5">3 Units</option>
+                      <option value="5">4 Units</option>
+                      <option value="5">5 Units</option>
+                      <option value="5">6 Units</option>
+                      <option value="5">7 Units</option>
+                      <option value="5">8 Units</option>
+                      <option value="5">9 Units</option>
+                      <option value="5">10 Units</option>
+                      <option value="5">11 Units</option>
+                      <option value="5">12 Units</option>
+                      <option value="5">13 Units</option>
+                      <option value="5">14 Units</option>
+                      <option value="5">15 Units</option>
+                 </select><br> <br>
+                 <select name="RoomId" id="wala" style="padding: 10px 23px; ">
+                  <option value="None">Max Time Use Allowed</option>
+                  <option value="5">15 Mins</option>
+                  <option value="5">30 Mins</option>
+                  <option value="5">1 Hour</option> 
+             </select>
+                        <br><br> 
+                        <select name="RoomId" id="wala" style="padding: 10px 23px; ">
+                          <option value="None">How Many Times </option>
+                          <option value="5">5 Repetition</option>
+                          <option value="5">10 Repetition</option>
+                          <option value="5">17 Repetition</option> 
+                     </select>
+                        <input type="submit" value="Create" onclick="msgCreatLab()" style="padding: 10px 10px; border: none; background-color: aqua;">
+                      </div>
+
+                       <div id="EditCollegeAdmin" class="AdminMenucontent">
+                        <h3>Edit Lab Attendant</h3>
+                        <table id="HomeColTool">
+                            
+                          <tr>
+                            <th class="labid">id</th>
+                            <th class="labName">Lab Attendant Name</th>
+                            <th class="lablCourse">Room Number </th>
+                            <th class="labNum">Units</th> 
+                            <th class="labIndi">Online</th>
+                            <th class="labIndi">others</th>
+                          </tr>
+                          <tr>
+                            <td>1801</td>
+                            <td style="color: blue;" id="ViewProfile7">Prof. Jaydee Ballaho</td> 
+                            <td>RN908</td>
+                            <td>15</td>
+                            <td >Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                            <td style="color: red;"> <a id="EditAdminn"> Edit</a> </td>
+                          </tr> 
+                          <tr>
+                            <td>1803</td>
+                            <td  style="color: blue;" id="ViewProfile8">Prof. Lucy Sadiwa </td> 
+                            <td>RN909</td>
+                            <td>15</td>
+                            <td>Offline <img src="./image/onnline.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                            <td style="color: red;"> <a id="EditStudsss"> Edit</a> </td>
+                          </tr> 
+                         
+                        </table>
+
+                        <br><br><hr><br>
+
+                        <input type="text" id="colId" value="Search Room Number" style="padding: 10px 4px;"   > <img src="./image/search.png" onclick="searchmsg()" alt="search" width="33px" height="33px" style="position: relative; top: 17px; left: 6px;">  
+                        <br><br>
+                        <table id="HomeAdminTool">
+                           
+                          <tr>
+                             
+                          
+                            <th class="ColName">Room Number</th>
+                            <th class="ColName">Units</th>   
+                            <th class="ColIndi">Status</th>
+                             <th class="ColIndi">Other</th>
+                          </tr>
+                          <tr>
+                            <td>RN908</td> 
+                            <td>15 Units</td> 
+                             <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                            <td style="color: red;"> <a id="RnEdit"> Edit</a> </td>
+                          </tr> <tr>
+                            <td>RN909</td> 
+                            <td>15 Units</td> 
+                             <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                            <td style="color: red;"> <a id="EditStuds"> Edit</a> </td>
+                          </tr>
+                      </table> 
+                      <br><br><br> 
+
+                       </div>
+
+                       
+
+                       <div class="clearfix"></div>
+                     </div>   <br><br>
+                          <button class="cancelbtn" style="float: right;"  type="button" onclick="document.getElementById('AdminTool').style.display='none'" >Close</button> 
+                    </div> 
+              </div> 
+            </div>
+            <div id="ViewProfile" class="Profileoverview"> 
+              <div class="AdToolinner">
+                <div class="AdTool-header">    </div>
+                       
+                    <div class="AdTool-body">
+                       <h3 style="text-align: center;">--- Profile ---</h3> <hr>
+                       <br> 
+                       <p align="center"> <img src="./image/UserAvatar.png" alt="user"   width="70px" height="70px"> <br><br> <b>  <br> User Profile 
+                      <br><br> Name of The College Department <br> <br>   gtSampleemail@wmsu.edu.ph </b></p>
+      
+      
+                          </div>
+      
+                          <br> 
+                          <button class="cancelbtn" style="float: right;"  type="button" onclick="document.getElementById('ViewProfile').style.display='none'" >Close</button> 
+                           </div> 
+              </div> 
+
+
+
+              <div id="EditStud" class="editlaboverview"> 
+                <div class="AdToolinner">
+                  <div class="AdTool-header">
+                     
+                  </div>
+                         
+                      <div class="AdTool-body">
+                            <p align="center">Edit Properties</p>
+                            <br>
+                            <select name="RoomId" id="wala" style="padding: 5px 20px; ">
+                              <option value="None">Enter Time</option>
+                              <option value="5">5 Minutes</option>
+                              <option value= "10">10  Minutes</option>
+                              <option value= "15">15  Minutes</option>
+                              <option value= "20">20  Minutes</option>
+                              <option value= "25">25  Minutes</option>
+                              <option value= "30">30  Minutes</option>
+                              <option value= "1hrs">1 Hour </option>
+                         </select>
+                         <br><br>
+                         <Input type="text" value="PC Unit" style="padding: 5px 10px; " ></Input>
+                         <br><br>
+                            <input type="submit" value="Submit" onclick="msgSUb()" style="padding: 5px 10px; border: none; background-color: aqua;" >
+                            <hr>
+                             
+                            <p>Or Delete User</p>
+                            <input type="Submit" onclick="msgDel()" value="Delete" style="padding: 5px 10px; border: none; background-color: aqua;">
+                            <br>
+                            
+                            <button class="cancelbtn" style="float: right;"  type="button" onclick="document.getElementById('EditStud').style.display='none'" >Close</button> 
+                      
+                            <br>
+                            </div>
+        
+                             
+                             </div> 
+                </div> 
+
+
+                <div id="EditAdmins" class="editlaboverview"> 
+                  <div class="AdToolinner">
+                    <div class="AdTool-header">
+                       
+                    </div>
+                           
+                        <div class="AdTool-body">
+                              <p align="center">Edit Admin</p>
+                              <br>
+                              <select name="RoomId" id="wala" style="padding: 5px 20px; ">
+                                <option value="None">Room Number</option>
+                                <option value="5">RN 908</option>
+                                <option value="5">RN 909</option>
+                                <option value="5">RN 910</option>
+                                <option value="5">RN 911</option>
+                                <option value="5">RN 912</option>
+                                 
+                           </select>
+                           <br><br>
+                           <select name="RoomId" id="wala" style="padding: 10px 10px; ">
+                            <option value="None">Lab Admin</option>
+                            <option value="5">Prof, Gahdmar Bilamide</option>
+                            <option value="5">Prof, Jaydee Ballaho</option>
+                            <option value="5">Prof, Lucy Sadiwa</option>
+                            <option value="5">Prof, Marvic Lines</option>
+                            <option value="5">Prof, Salimar Tahil</option> 
+                       </select>
+                           <br><br>
+                              <input type="submit" value="Modify" onclick="modfy()" style="padding: 5px 10px; border: none; background-color: aqua;" >
+                              <hr>
+                               
+                              <p>Or Delete Lab Admin</p>
+                              <input type="Submit" onclick="DelLab()" value="Delete" style="padding: 5px 10px; border: none; background-color: aqua;">
+                              <br>
+
+                              
+                              <button class="cancelbtn" style="float: right;"  type="button" onclick="document.getElementById('EditAdmins').style.display='none'" >Close</button> 
+                        
+                              <br>
+                              </div>
+          
+                               
+                               </div> 
+                  </div> 
+
+
+                  <div id="Roonumb" class="editlaboverview"> 
+                    <div class="AdToolinner">
+                      <div class="AdTool-header">
+                         
+                      </div>
+                             
+                          <div class="AdTool-body">
+                                <p align="center">-- Edit Labolatory --</p>
+                               
+                             <select name="RoomId" id="wala" style="padding: 10px 10px; ">
+                              <option value="None">Number of Units</option>
+                               
+                                <option value="5">3 Units</option>
+                                <option value="5">4 Units</option>
+                                <option value="5">5 Units</option>
+                                <option value="5">6 Units</option>
+                                <option value="5">7 Units</option>
+                                <option value="5">8 Units</option>
+                                <option value="5">9 Units</option>
+                                <option value="5">10 Units</option>
+                                <option value="5">11 Units</option>
+                                <option value="5">12 Units</option>
+                                <option value="5">13 Units</option>
+                                <option value="5">14 Units</option>
+                                <option value="5">15 Units</option> 
+                         </select>
+                             <br><br>
+                                <input type="submit" value="Modify" onclick="modfy()" style="padding: 5px 10px; border: none; background-color: aqua;" >
+                                 <br>
+                                <hr>
+                                <h4>Commands</h4>
+                                <input type="submit" value="Shutdown Lab" onclick="shutup()" style="padding: 5px 10px; border: none; background-color: aqua;" > 
+                                <hr>
+                                 
+                                <p>Or Delete Labolatory</p>
+                                <input type="Submit" onclick="DelLab()" value="Delete" style="padding: 5px 10px; border: none; background-color: aqua;">
+                                <br>
+  
+                                
+                                <button class="cancelbtn" style="float: right;"  type="button" onclick="document.getElementById('Roonumb').style.display='none'" >Close</button> 
+                          
+                                <br>
+                                </div>
+            
+                                 
+                                 </div> 
+                    </div> 
+
+            <div id="Notif" class="notif"> 
+              <div class="AdToolinner">
+                <div class="AdTool-header">
+                   
+                </div>
+                       
+                    <div class="AdTool-body">
+                          <p>For Notification</p>
+                          <button class="cancelbtn" style="float: right;"  type="button" onclick="document.getElementById('Notif').style.display='none'" >Close</button> 
+                    
+                          <br><br>
+                          <div class="NotifInfo success">
+                            <span class="closebtn">&times;</span>  
+                            <b>Succes Login</b> <br> <br> Good day College Admin, Welcome to the System.
+                          </div> 
+      
+                          
+      
+                          <div class="NotifInfo warning">
+                            <span class="closebtn">&times;</span>  
+                            <b>Attention !</b> <br>gt20190484 wants to : <br> Access <a href="">  Pc 5 </a> <br> Time : 30mins. 
+                          </div>
+
+                          <div class="NotifInfo success">
+                            <span class="closebtn">&times;</span>  
+                             Lab Attendant approved gt20190484 for Accessing <a href="">  Pc 5 </a>.
+                          </div>
+
+                          <div class="NotifInfo info">
+                            <span class="closebtn">&times;</span>  
+                             <b>Lab Attendant : </b> <br> "Sir We are waiting po For your Approval for Room 8  "   .
+                          </div>
+       
+                          </div> 
+              </div> 
+            </div>
+
+           
+           
+
+
+
+
+    </div>
+
+      
+     
+<script> 
+
+
+function msgSUb(){
+alert("Changes Saved!") 
+location.href="College_Admin.html";
+} 
+ 
+
+
+
+var AdminTool = document.getElementById("AdminTool") 
+  var btn = document.getElementById("OpenTools") 
+ 
+ 
+btn.onclick = function() {
+  AdminTool.style.display = "block";
+}  
+
+
+function msgapp(){
+  alert("Successful !")
+  location.href="College_Admin.html";
+}
+
+var ViewProfile = document.getElementById("ViewProfile") 
+  var btn = document.getElementById("ViewProfile1") 
+ 
+ 
+btn.onclick = function() {
+  ViewProfile.style.display = "block";
+}  
+
+
+
+var EditAdmins = document.getElementById("EditAdmins") 
+  var btn = document.getElementById("EditAdminn") 
+ 
+ 
+btn.onclick = function() {
+  EditAdmins.style.display = "block";
+} 
+ 
+function searchmsg(){
+  alert("Searching Room Number!")
+}
+
+function msgCreatLab(){
+  alert("Succeffull !!")
+  location.href="College_Admin.html";
+}
+
+var EditStud = document.getElementById("EditStud") 
+      var btn = document.getElementById("EditStuds")  
+    btn.onclick = function() {
+      EditStud.style.display = "block";
+ } 
+  
+
+ function DelLab(){
+  alert("Deleted !")
+  location.href="College_Admin.html";
+ }
+var Notif = document.getElementById("Notif") 
+  var btn = document.getElementById("Notifs") 
+ 
+ 
+btn.onclick = function() {
+  Notif.style.display = "block";
+} 
+//Notification
+
+function modfy(){
+  alert("Saved Changes!")
+  location.href="College_Admin.html";
+}
+
+var close = document.getElementsByClassName("closebtn");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+
+
+//Admin Tool
+
+function shutup(){
+  
+  alert("Shutdown Labolatory Computers!")
+  location.href="College_Admin.html";
+}
+ 
+function contentoptn(evt, cityName) {
+  var i, AdminMenucontent, AdminMenulinks;
+  AdminMenucontent = document.getElementsByClassName("AdminMenucontent");
+  for (i = 0; i < AdminMenucontent.length; i++) {
+    AdminMenucontent[i].style.display = "none";
+  }
+  AdminMenulinks = document.getElementsByClassName("AdminMenulinks");
+  for (i = 0; i < AdminMenulinks.length; i++) {
+    AdminMenulinks[i].className = AdminMenulinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+var Roonumb = document.getElementById("Roonumb") 
+  var btn = document.getElementById("RnEdit") 
+ 
+ 
+btn.onclick = function() {
+  Roonumb.style.display = "block";
+} 
+</script>
+ 
+</body>  
+ 
+</html>
+

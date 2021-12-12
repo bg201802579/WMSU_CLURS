@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="./image/wmsulogo.png" type="imageIcon" >
+      <link rel="stylesheet" href="./css/styles.css">
+      <title>WMSU CLURS Homepage</title>
+</head>
+<body>
+<header> 
+    <div class="Menubar"> 
+          <img class="logo" src="./image/wmsulogo.png" alt="wmsulogo" >   
+            <h1>  WMSU CLURS</h1> 
+            <div class="menus"  >
+              <a class="loginchoise"> Login Portal</a>
+                    <button class="menuchois">
+                    <a onclick="document.getElementById('Admin').style.display='block'" style="width:auto;"  >Administrator</a>
+                    <a onclick="document.getElementById('Crimson').style.display='block'" style="width:auto;" >Crimson User </a> 
+                    </button>
+            </div> 
+                <a id="myBtn" >About Us </a>
+                <a class="home" href="./index.html" >Home</a> 
+    </div>
+</header>
+
+<div class="main">
+
+          
+        <div class="callout">
+          <div class="Intro-Message">
+            <div class="message"> 
+            Welcome
+            </div>  
+          </div>
+           
+          
+        </div>
+    <div class="Portal" id="Admin"  > 
+        <form class="LogInSection animate" action="#" method="post">
+                <div class="imageAvatar">
+                    <img class="avatar" src="./image/AdminAvatar.png" alt="Adminlogo"  >
+                </div>
+          <h3 style="font-family: 'Courier New', Courier, monospace;">--- Administrator ---</h3>
+          <div class="credlog">
+            <label class="Credbox" for="uname"><b>Username</b></label>
+                   <input type="text" placeholder="Enter Username" name="Auname" required>
+            <label class="Credbox" for="paswrd"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="Apaswrd" required>
+
+                    <br><br>
+                    <input id="SuperAdmin" type="radio" name="SuperAdmin" value="SuperAdmin">
+                    <label for="SuperAdmin">Super Admin</label>
+                    <input id="ColAdmin" type="radio" name="ColAdmin" value="ColAdmin">
+                    <label for="ColAdmin">College Admin</label>
+                    <input id="LabAdmin" type="radio" name="LabAdmin" value="LabAdmin">
+                    <label for="LabAdmin">Lab Admin</label> 
+             <button class="Portalbutton" type="submit"  onclick="enterportal()" >Login</button>
+             <button class="cancelbtn"  type="button" onclick="document.getElementById('Admin').style.display='none'" >Cancel</button> 
+            </div>   
+        </form>
+      </div>
+      
+
+      <div class="Portal" id="Crimson"  > 
+        <form class="LogInSection animate" action="#" method="post">
+            <div class="imageAvatar">
+               
+              <img class="avatar" src="./image/UserAvatar.png" alt="Userlogo"  >
+              
+            </div>
+          <h3>Crimson User</h3>
+              <div class="credlog">
+                <label class="Credbox" for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" id="uname" required>
+          
+                <label class="Credbox" for="paswrd"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="paswrd" required>
+                  
+                <button class="Portalbutton" type="submit" onclick="javascript:validate()">Login</button>
+                 
+                <p class="SignUp" > Do you Have an <a href="Sign_Up.html"> Account?</a> </p>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                   
+               
+                <button class="cancelbtn" style="float: right;"   type="button" onclick="document.getElementById('Crimson').style.display='none'"  >Cancel</button>
+                
+              </div>
+       </form>
+      </div>
+              
+<div class="aboutus" id="Idaboutus"  >
+ <div class="aboutusinner">
+    <div class="aboutus-header">
+      <span class="close" onclick="document.getElementById('Idaboutus').style.display='none'" >&times;</span>
+      <h2> <img src="./image/wmsulogo.png" alt="about us temp logo" width="30px" height=" 30px"> About us </h2>
+    </div>
+    <div class="bodyaboutus">
+      <p>The Computer Labolatory Utilization Reserve System  or the CLURS is made Posible by Supreme Dev
+        of institue of Computer Studies to Serve only for the crimson students to help them to get in 
+        thouchec in technology need with thier studies.
+        <br><br> <a href="https://youtu.be/r9WPxK2iu-M" target="_blank">How to use?</a>
+      </p>
+       
+    </div>
+    
+  </div>
+
+</div>
+      
+    </div>
+  <div class="footer">
+                <div class="imgfooter">
+                    <img class="footerPic" src="./image/wmsulogo.png" alt="Avatar"  >
+                    <br>
+                    <h1>WMSU CLURS</h1>
+                </div>
+
+              
+              <div class="feedback"> 
+                <fieldset class="fidbackcontainer"> 
+                
+                <label class="Email" for="Email">Email</label>
+                <input class="emailBox" id="Email" >
+                <br> 
+                <textarea class="textConcern" name="Message" id="" cols="30" rows="9"></textarea>
+                <br><button class="Submit">Submit</button>
+              </fieldset>
+              </div>
+
+              <div class="MediaContent">
+                <H1>Join Us on</H1>
+                
+                  <a href="facebook.com"> <img src="./image/facebook.png" alt="fB" width="25" height="25"> Facebook</a>
+                  <a href="ig.com">  <img src="./image/instagram.png" alt="iG" width="25" height="25"> Instagram </a>
+                  <a  href="https://youtu.be/r9WPxK2iu-M" target="_blank" ><img src="./image/how to.png" alt="how2" width="25" height="25">How to use?</a>
+                  
+                </ul>
+            
+              </div>
+
+      <div class="mapfooter">
+                  <!--Sir Wala hindi kopa muna Ilalagay-->
+       </div>
+                
+          
+
+
+
+<script>
+   
+  var Portal = document.getElementById('Admin'); //Amin Portal
+  var Portal = document.getElementById('Crimson'); //fr crimson Portal 
+  var aboutus = document.getElementById("Idaboutus") 
+  var btn = document.getElementById("myBtn") 
+  var span = document.getElementsByClassName("close")[0]; 
+
+  window.onclick = function(event) {
+      if (event.target == Portal) {
+        Portal.style.display = "none";
+      }
+  }
+
+        btn.onclick = function() {
+        aboutus.style.display = "block";
+      } 
+      span.onclick = function() {
+        aboutus.style.display = "none";
+      } 
+      window.onclick = function(event) {
+        if (event.target == aboutus) {
+          aboutus.style.display = "none";
+        }
+      }
+
+  function enterportal(){
+    if(document.getElementById('SuperAdmin').checked){location.href='Super_Admin.html';}
+    else if(document.getElementById('ColAdmin').checked){location.href='College_Admin.html';}
+    else if(document.getElementById('LabAdmin').checked){location.href='Lab_Admin.html';}
+  }
+
+  function validate(){
+    var unames = "crimson@wmsu.com" , pasrd = 123;
+    if(document.getElementById('uname').value == unames && document.getElementById('paswrd').value == pasrd) {
+       alert("Succesful login !")
+       location.href="CrimsonStudent.html"
+        
+    }
+    else{
+      alert(" Succesfull Login ! ")
+      location.href="Crimson_stud.html"
+    }
+  } 
+
+</script>
+ 
+</body>  
+ 
+</html>
+

@@ -1,0 +1,479 @@
+ 
+body {
+  background-image: url(bg1.jpg);
+  /*image link kasi hindi yan Bayad <a href="http://www.freepik.com">Designed by Freepik</a>
+*/
+  background-color: #012f27;
+  background-repeat: no-repeat;
+  background-size:contain;
+  margin:0;
+}
+
+
+ 
+.Menubar {
+background-color: #00332a;
+position: fixed;
+top: 0;
+overflow: hidden; 
+height: 80px;
+width: 100%;
+}
+
+.Menubar a {
+float: right;
+display: block; 
+font-size: 17px;
+font-family: 'Courier New', Courier, monospace;
+color: #f2f2f2;
+text-align: center;
+padding: 30px 26px;
+text-decoration: none;
+
+}
+.about{
+margin-right: 22px;
+}
+
+
+
+
+
+.Menubar a:hover {
+background: #ddd;
+color: black;
+}
+
+.loginchoise {
+background-color:  #00332a;
+color: white; 
+width: 150px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 16px;
+
+
+}
+
+.menus   {
+position: relative;
+display: inline-block;
+float: right;
+}
+
+.menuchois {
+display: none;
+position: absolute;   
+min-width: 120px;
+border: #00332a;
+z-index: 1;
+}
+.menuchois a:hover {
+background-color: #f1f1f1 ;
+color: black;
+
+
+}
+.menuchois a {
+color: white;
+padding: 10px 29px;
+text-align: center; 
+display: block;
+ 
+}
+
+.menus:hover .loginchoise {
+background-color: #ddd;
+ 
+}
+
+.menus:hover .menuchois {
+display: inline-block;
+background-color:  #00332a;
+color: white;
+
+}
+
+
+
+
+.main {
+padding: 16px;
+margin-top: 30px;
+height:720px;  
+}
+
+
+
+.logo{
+    float: left;
+     margin-top: 7px;
+     margin-left:19px;
+     margin-bottom: 30px;
+    width: 70px;
+    height: 70px;
+   
+}
+.Menubar  h1{
+    color: white; 
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-flex;
+    position: relative;
+    left: 30px;
+     
+}
+
+h3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; 
+    text-align: center;
+   
+ 
+}
+
+
+
+
+.footer {
+  background-color: #00332a;
+  color: white;
+  text-align: center;
+  position: relative;
+  left: 0; 
+  bottom: 0;
+  width: 100%;
+  height: 320px; 
+  
+   
+   
+}
+.imgfooter{
+  position: relative;
+  text-align: center;
+  margin: 24px 0 12px 0;
+   
+  
+} 
+
+ img.footerPic{
+  width: 100px;
+  margin-top: 2%;
+  border-radius: 50%;
+   
+}
+
+.fidbackcontainer{
+  width: 370px;
+  height: 235px;
+  position: relative;
+  left: 20%;
+  margin-top: 10%;
+  border: #072f07;
+}
+.emailBox  {
+   position: inherit;
+   display: inline-block;
+   margin-bottom: 1%;
+   
+    
+
+  
+}
+
+.Email{
+   
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 27px;
+   
+  
+}
+.textConcern{
+  position: inherit;
+  display: inline;
+  margin-left: 1%;
+
+}
+
+.Submit{
+  float: right;
+  display: block; 
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color:#68ccc4;
+  color:black;
+  text-align: center;
+  padding: 7px 14px;
+  position: inherit;
+  right: 40%;
+  margin-top: 1%;
+  border: none;
+
+   
+    
+
+}
+
+.Submit:hover {
+  background: rgb(158, 18, 18);
+  color: white;
+}
+
+.MediaContent{
+   
+  position: relative;
+  right: 20%;
+  bottom: 80%;
+  width: 20%;
+  height: 30%;
+  float: right; 
+  display: flexbox;
+  color:white;
+}
+
+  .MediaContent a{
+   
+  display: inline-block; 
+  font-size: 19px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 26px;
+  text-decoration: none;
+   
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.Portalbutton {
+  background-color: #226659;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.Portalbutton:hover {
+  background-color: #68ccc4;
+   
+} 
+ 
+.imageAvatar{
+  text-align: center;
+  margin: 24px 0 5px 0;
+  position: relative;
+} 
+
+.credlog {
+  padding: 16px;
+}
+
+
+img.avatar {
+  width: 80px;
+  border-radius: 50%;
+}
+
+span.paswrd {
+  float: right;
+  padding-top: 16px;
+}
+
+
+
+
+.cancelbtn {
+  width: auto;
+  padding: 7px 14px;
+  background-color: #226659;
+  color: antiquewhite;
+  border: none;
+}
+.cancelbtn:hover{
+  background-color: #68ccc4;
+}
+
+
+
+.Portal {
+  display: none;  
+  position: fixed; 
+  left: 0;
+  top: 0;
+  width: 100%;  
+  height: 100%;  
+  z-index: 1;  
+  overflow: auto;  
+  background-color: rgb(0,0,0);  
+  background-color: rgba(37, 35, 35, 0.4);  
+   padding-top: 60px;
+   color: white;
+}
+
+ 
+.LogInSection {
+  border: 1px solid white;
+  background-color:  #012f27;
+  margin: 3% auto 12% auto; 
+  width: 30%; 
+  
+}
+
+.Credbox{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+} 
+
+ 
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+} 
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  
+}
+
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+
+
+
+
+.aboutus {
+display: none; 
+position: fixed;   
+left: 0;
+top: 0;
+width: 100%;  
+height: 100%;   
+z-index: 1;  
+padding-top: 200px; 
+overflow: auto; 
+background-color: rgb(0,0,0);  
+background-color: rgba(0,0,0,0.4);  
+}
+
+
+.aboutusinner {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+width: 80%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(66, 16, 16, 0.19);
+-webkit-animation-name: AnimateAboutus;
+-webkit-animation-duration: 0.9s;
+} 
+
+@-webkit-keyframes AnimateAboutus {
+from {top:-300px; opacity:0} 
+to {top:0; opacity:1}
+}
+
+
+
+.close {
+font-weight: bold;
+float: right;
+color: white;
+font-size: 28px; 
+ 
+}
+
+.close:hover, .close:focus  {
+color: #000;
+cursor: pointer;
+text-decoration: none;
+ 
+}
+
+.aboutus-header { 
+background-color: #072f07;
+padding: 2px 16px;
+color: white;
+}
+
+.bodyaboutus{
+text-indent: 40px;
+padding: 2px 16px;
+font-size: 20px;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bolder;
+}
+
+.SignUp{
+color: white;
+} 
+
+
+
+/*intro text*/
+.callout {
+position: relative;
+top: 31%;
+left: 30%;
+ opacity: 60%;
+ z-index: -1;
+
+}
+
+.Intro-Message {
+width: 500px;
+ 
+height: 150px;
+background: #223a22;
+border: 2px white;
+ 
+}
+
+.message{
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+position: relative;
+top: 45px;
+left: 120px;
+font-size: 50px;
+color: white;
+}
+
+
+
+.closebtn {
+position: absolute;
+top: 5px;
+right: 15px;
+color: white;
+font-size: 30px;
+cursor: pointer;
+}
+
+.closebtn:hover {
+color: lightgrey;
+}
+
+  

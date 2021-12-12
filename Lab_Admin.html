@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <link rel="icon" href="./image/LabAdmin.png" type="imageIcon" >
+<link rel="stylesheet" href="./css/labadmin.css">
+ <title>Lab Admin</title>
+</head>
+  <body>
+    <header> 
+      <div class="Menubar"> 
+        <img class="logo" src="./image/wmsulogo.png" alt="wmsulogo"> 
+            <h1>Lab Administrator</h1> 
+                  <div class="menus"  >
+                    <a href="./index.html" > Log Out</a>  
+                    <a id="OpenTools" >Tools </a>
+                    <a id="Notifs" > <img src="./image/bell2.png" alt="notif Bell" width="30" height="30"> </a>
+                  </div> 
+      </div> 
+    </header>
+
+    <div class="main">
+      
+                
+            <div id="AdminTool" class="AdTool"> 
+              <div class="AdToolinner">
+                <div class="AdTool-header">
+                  <img class="ToolPic" src="./image/LabAdmin.png" alt="about us temp logo" > 
+                </div>
+                      <div class="HeadText">
+                        <h2>Lab Admin Dashboard</h2>
+                      </div> 
+                    <div class="AdTool-body">
+                                          <div class="AdminToolls">
+                                            <div class="AdminMenu">
+                                            <button class="AdminMenulinks" onmouseover="contentoptn(event, 'Home')"> <img src="./image/HomeAdminTool.png" alt="" width="30px" height="30px" style="position: relative; top: 2px;"> Home</button>
+                                            <button class="AdminMenulinks" onmouseover="contentoptn(event, 'CreateCollegeAdmin')"> <img src="./image/AddComputer.png" alt="" width="30px" height="30px" style="position: relative; top: 4px;">Reserve Unit  </button>
+                                            <button class="AdminMenulinks" onmouseover="contentoptn(event, 'EditCollegeAdmin')"> <img src="./image/EditComputer.png" alt="" width="30px" height="30px" style="position: relative; top: 2px;"> Edit Computer Unit</button>
+                                           
+                                          </div>
+
+                                          <div id="Home" class="AdminMenucontent">
+                                            <h3>Overview record : RN908  </h3>  <input type="text" id="colId" value="Search pc id" style="padding: 10px 4px;"   > <img src="./image/search.png" onclick="searchmsg()" alt="search" width="33px" height="33px" style="position: relative; top: 17px; left: 6px;">  
+                                             <br><br>
+                                            <table id="HomeAdminTool">
+                                              <tr>
+                                                
+                                                <th class="ColName">Id</th>
+                                                <th class="ColName">User Name</th> 
+                                                <th class="ColName">Pc Number</th> 
+                                                <th class="ColName">Time</th> 
+                                                <th class="ColNum">Room Number</th> 
+                                                <th class="ColIndi">Status</th>
+                                                 <th class="ColIndi">Other</th>
+                                              </tr>
+                                              <tr>
+                                                <td>1701</td>
+                                                <td>Andromedae siruis</td> 
+                                                <td>PC1</td>
+                                                <td>30:00  Mins</td>
+                                                <td>RN908</td> 
+                                                <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                <td style="color: red;"> <a id="EditStuds"> Edit</a> </td>
+                                              </tr>  <tr>
+                                                <td>1702</td>
+                                                <td>Aaron Melano</td> 
+                                                <td>PC2</td>
+                                                <td>27:00  Mins</td>
+                                                <td>RN908</td> 
+                                                <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                <td style="color: red;"> <a id="EditStudss" > Edit</a> </td>
+                                              </tr>
+                                              <tr>
+                                                <td>1703</td>
+                                                <td>Alasa Jovelyn</td> 
+                                                <td>PC3</td>
+                                                <td>15:00  Mins</td>
+                                                <td>RN908</td> 
+                                                <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                <td style="color: red;"> <a id="EditStudsss"> Edit</a> </td>
+                                              </tr>
+                                              <tr>
+                                                <td>1704</td>
+                                                <td>lester Dela Torre</td> 
+                                                <td>PC4</td>
+                                                <td>10:00  Mins</td>
+                                                <td>RN908</td> 
+                                                <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                <td style="color: red;"> <a id="EditStudssss"> Edit</a> </td>
+                                              </tr>
+                                                <tr>
+                                                <td>1705</td>
+                                                <td>Oroscco Pilar</td> 
+                                                <td>PC5</td>
+                                                <td>30:00  Mins</td>
+                                                <td>RN908</td> 
+                                                <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                <td style="color: red;"> <a id="EditStudsssss"> Edit</a> </td>
+                                              </tr>
+                                              <tr>
+                                                <td>1706</td>
+                                                <td>Ceejay ceejay</td> 
+                                                <td>PC6</td>
+                                                <td>30:00  Mins</td>
+                                                <td>RN908</td> 
+                                                <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                <td style="color: red;"> <a id="EditStudssssss"> Edit</a> </td>
+                                              </tr>
+                                              
+                                              
+                                            </table>
+                                          </div>
+
+                                          <div id="CreateCollegeAdmin" class="AdminMenucontent">
+                                            <h3>Reserve Computer Unit </h3>
+                                             
+                                           <select name="RoomId" id="wala" style="padding: 10px 10px; ">
+                                              <option value="None">Appoint PC ID</option>
+                                               
+                                                <option value="5">1706</option>
+                                                <option value="5">1707</option>
+                                                <option value="5">1708</option>
+                                                <option value="5">1709</option>
+                                                <option value="5">1710</option>
+                                                <option value="5">1711</option>
+                                                <option value="5">1712</option>
+                                                <option value="5">1713</option>
+                                                <option value="5">1714</option>
+                                                
+                                                 
+                                         </select>
+                                             
+                                            <input type="text" id="PC-number" value="Enter Email" style="padding: 10px 10px; "> 
+                                            <select name="RoomId" id="wala" style="padding: 10px 10px;">
+                                                    <option value="None">Minutes</option>
+                                                    <option value="5">5 Minutes</option>
+                                                    <option value= "10">10  Minutes</option>
+                                                    <option value= "15">15  Minutes</option>
+                                                    <option value= "20">20  Minutes</option>
+                                                    <option value= "25">25  Minutes</option>
+                                                    <option value= "30">30  Minutes</option>
+                                                    <option value= "1hrs">1 Hour </option>
+                                              </select>
+                                              
+                                              <input onclick="adds()" type="submit" value="Submit" style="padding: 10px 10px; background-color: aqua; border: none;" >
+                                              <br><br> <hr>
+                                         
+
+                                            <div class="tablelist"> 
+                                            <table id="HomeAdminTool">
+                                              <tr>
+                                                
+                                                <th class="ColName">Id</th>
+                                                <th class="ColName">PC Number</th>
+                                                <th class="ColName">User Name</th>
+                                                <th class="ColName">Minutes</th>
+                                                <th class="ColName">Appointee</th>
+                                                <th class="ColName">Date Appointed</th>
+                                                <th class="ColName">Status</th>
+                                                 
+                                                 
+                                                 
+                                              </tr>
+                                              <tr>
+                                                <td>1701</td>
+                                                <td>PC1</td>
+                                                <td>Andromedae siruis</td> 
+                                                <td>30mins</td>
+                                               <td>L-A :Jaydee Ballaho</td> 
+                                                <td>03/22/21</td>
+                                                <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td> 
+                                                 </tr> 
+                                                 <tr>
+                                                  <td>1702</td>
+                                                  <td>PC2</td>
+                                                  <td>Aaron Melano</td>
+                                                  <td>30mins</td> 
+                                                 <td>L-A :Jaydee Ballaho</td> 
+                                                  <td>03/22/21</td>
+                                                  <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td> 
+                                                   </tr>
+                                                   <tr>
+                                                    <td>1703</td>
+                                                    <td>PC3</td>
+                                                    <td>Alasa Jovelyn</td>
+                                                    <td>30mins</td> 
+                                                   <td>L-A :Jaydee Ballaho</td> 
+                                                    <td>03/22/21</td>
+                                                    <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td> 
+                                                     </tr>
+                                                     <tr>
+                                                      <td>1704</td>
+                                                      <td>PC4</td>
+                                                      <td>ester Dela Torre</td> 
+                                                      <td>2mins</td>
+                                                     <td>L-A :Jaydee Ballaho</td> 
+                                                      <td>03/22/21</td>
+                                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td> 
+                                                       </tr>  
+                                                       <tr>
+                                                        <td>1705</td>
+                                                        <td>PC5</td>
+                                                        <td>Oroscco Pilar</td> 
+                                                        <td>30 mins</td> 
+                                                       <td>L-A :Jaydee Ballaho</td> 
+                                                        <td>03/22/21</td>
+                                                        <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td> 
+                                                         </tr> 
+                                                         <tr>
+                                                          <td>1706</td>
+                                                          <td>PC6</td>
+                                                          <td>Ceejay Ceejay</td> 
+                                                          <td>30 mins</td> 
+                                                          <td>C-A :Sir Go</td> 
+                                                        <td>03/22/21</td>
+                                                          <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td> 
+                                                           </tr> 
+                                                           <tr>
+                                                            <td>1707</td>
+                                                            <td>PC7</td>
+                                                            <td>-----</td> 
+                                                            <td>-----</td> 
+                                                            <td>-----</td> 
+                                                            <td>-----</td> 
+                                                            <td>offline <img src="./image/offnline.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td> 
+                                                             </tr> 
+                                                             <tr>
+                                                              <td>1708</td>
+                                                              <td>PC8</td>
+                                                              <td>-----</td> 
+                                                              <td>-----</td> 
+                                                              <td>-----</td> 
+                                                              <td>-----</td> 
+                                                              <td>offline <img src="./image/offnline.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td> 
+                                                               </tr>  
+                                                               <tr>
+                                                                <td>1709</td>
+                                                                <td>PC9</td>
+                                                                <td>-----</td> 
+                                                                <td>-----</td> 
+                                                                <td>-----</td> 
+                                                                <td>-----</td> 
+                                                                <td>offline <img src="./image/offnline.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td> 
+                                                                 </tr>   <tr>
+                                                                  <td>1710</td>
+                                                                  <td>PC10</td>
+                                                                  <td>-----</td> 
+                                                                  <td>-----</td> 
+                                                                  <td>-----</td> 
+                                                                  <td>-----</td> 
+                                                                  <td>offline <img src="./image/offnline.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td> 
+                                                                   </tr><tr> 
+                                                                   <td>1711</td>
+                                                                  <td>PC11</td>
+                                                                  <td>-----</td> 
+                                                                  <td>-----</td> 
+                                                                  <td>-----</td> 
+                                                                  <td>-----</td> 
+                                                                  <td>offline <img src="./image/offnline.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td> 
+                                                                   </tr>  
+                                                                   <tr> 
+                                                                    <td>1712</td>
+                                                                   <td>PC12</td>
+                                                                   <td>-----</td> 
+                                                                   <td>-----</td> 
+                                                                   <td>-----</td> 
+                                                                   <td>-----</td> 
+                                                                   <td>offline <img src="./image/offnline.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td> 
+                                                                    </tr>
+                                                                    <tr> 
+                                                                      <td>1713</td>
+                                                                     <td>PC13</td>
+                                                                     <td>-----</td> 
+                                                                     <td>-----</td> 
+                                                                     <td>-----</td> 
+                                                                     <td>-----</td> 
+                                                                     <td>offline <img src="./image/offnline.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td> 
+                                                                      </tr> 
+                                                                      <tr> 
+                                                                        <td>1714</td>
+                                                                       <td>PC14</td>
+                                                                       <td>-----</td> 
+                                                                       <td>-----</td> 
+                                                                       <td>-----</td> 
+                                                                       <td>-----</td> 
+                                                                       <td>offline <img src="./image/offnline.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td> 
+                                                                        </tr> 
+                                                                        <tr> 
+                                                                          <td>1715</td>
+                                                                         <td>PC15</td>
+                                                                         <td>-----</td> 
+                                                                         <td>-----</td> 
+                                                                         <td>-----</td> 
+                                                                         <td>-----</td> 
+                                                                         <td>offline <img src="./image/offnline.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td> 
+                                                                          </tr>
+                                                                 
+                                              
+                                            </table>
+                                          </div>
+
+                                          </div>
+
+                                          <div id="EditCollegeAdmin" class="AdminMenucontent">
+                                            <h3>Edit Lab Admin</h3>
+                                             
+                                             
+                                            <input type="text" id="colId" value="Search PC id" style="padding: 10px 4px;"   > <img src="./image/search.png" onclick="searchmsg()" alt="search" width="33px" height="33px" style="position: relative; top: 17px; left: 6px;">  
+                                            <hr>
+                                            <table id="HomeAdminTool">
+                                              <tr>
+                                                
+                                                <th class="ColName">Id</th>
+                                                <th class="ColName">PC Number</th>
+                                                <th class="ColName">Appointee</th>
+                                                <th class="ColName">Date Appointed</th>
+                                                <th class="ColName">Other</th>
+                                                 
+                                                 
+                                                 
+                                              </tr>
+                                              <tr>
+                                                <td>1701</td>
+                                                <td>PC1</td>
+                                               <td>L-A :Jaydee Ballaho</td> 
+                                                <td>03/22/21</td> 
+                                                <td style="color: red;"> <a id="EditPC">Edit</a> </td>
+                                                 </tr>  
+                                                 <tr>
+                                                  <td>1702</td>
+                                                  <td>PC2</td>
+                                                 <td>L-A :Jaydee Ballaho</td> 
+                                                  <td>03/22/21</td> 
+                                                  <td style="color: red;"> <a id="EditPC2">Edit</a> </td>
+                                                   </tr>  
+                                                   <tr>
+                                                    <td>1703</td>
+                                                    <td>PC3</td>
+                                                   <td>L-A :Jaydee Ballaho</td> 
+                                                    <td>03/22/21</td> 
+                                                    <td style="color: red;"> <a id="EditPC3">Edit</a> </td>
+                                                     </tr>  
+                                                     <tr>
+                                                      <td>1704</td>
+                                                      <td>PC4</td>
+                                                     <td>L-A :Jaydee Ballaho</td> 
+                                                      <td>03/22/21</td> 
+                                                      <td style="color: red;"> <a id="EditPC4">Edit</a> </td>
+                                                       </tr>  
+                                                       <tr>
+                                                        <td>1705</td>
+                                                        <td>PC5</td>
+                                                        <td>L-A :Jaydee Ballaho</td> 
+                                                        <td>03/22/21</td> 
+                                                        <td style="color: red;"> <a id="EditPC5">Edit</a> </td>
+                                                         </tr>   
+                                                         <tr>
+                                                          <td>1706</td>
+                                                          <td>PC6</td>
+                                                          <td>C-A :Sir Go</td> 
+                                                          <td>03/22/21</td> 
+                                                          <td style="color: red;"> <a id="EditPC6">Edit</a> </td>
+                                                           </tr>   
+                                              
+                                            </table>
+                                            
+
+                                          </div>
+
+                                          
+
+                                          <div class="clearfix"></div>
+                                        </div>     <br><br>
+                          <button class="cancelbtn" style="float: right;"  type="button" onclick="document.getElementById('AdminTool').style.display='none'" >Close</button> 
+                    </div> 
+              </div> 
+            </div>
+
+
+            <div id="Notif" class="notif"> 
+              <div class="AdToolinner">
+                <div class="AdTool-header">
+                   
+                </div>
+                       
+                    <div class="AdTool-body">
+                          <p>Your Notification</p><button class="cancelbtn" style="float: right;"  type="button" onclick="document.getElementById('Notif').style.display='none'" >Close</button> 
+                    
+                          <br><br>
+
+                          <div class="NotifInfo success">
+                            <span class="closebtn">&times;</span>  
+                            <b>Succes Login</b> <br> <br> Good day Lab Attendant, Welcome to the System.
+                          </div> 
+      
+                          
+      
+                          <div class="NotifInfo warning">
+                            <span class="closebtn">&times;</span>  
+                            <b>Attention !</b> <br>gt20190484 wants to : <br> Access  <a id="PC6"> <u> PC6</u> </a> <br> Time : 30mins. 
+                          </div>
+
+                          <div class="NotifInfo success">
+                            <span class="closebtn">&times;</span>  
+                             You approved gt20190484 for Accessing PC6.
+                          </div>
+
+                           
+                           </div> 
+              </div> 
+            </div> 
+      </div>
+
+
+ 
+      <div id="EditStud" class="editlaboverview"> 
+        <div class="AdToolinner">
+          <div class="AdTool-header">
+             
+          </div>
+                 
+              <div class="AdTool-body">
+                    <p>Edit Properties</p>
+                    <br>
+                    <select name="RoomId" id="wala" style="padding: 5px 5px; ">
+                      <option value="None">Edit Time</option>
+                      <option value="5">5 Minutes</option>
+                      <option value= "10">10  Minutes</option>
+                      <option value= "15">15  Minutes</option>
+                      <option value= "20">20  Minutes</option>
+                      <option value= "25">25  Minutes</option>
+                      <option value= "30">30  Minutes</option>
+                      <option value= "1hrs">1 Hour </option>
+                 </select>
+                 <select name="RoomId" id="wala" style="padding: 5px 5px; ">
+                  <option value="None">PC ID</option>
+                  <option value="5">1700</option>
+                  <option value="5">1701</option>
+                  <option value="5">1702</option>
+                  <option value="5">1703</option>
+                  <option value="5">1704</option>
+                  <option value="5">1705</option>
+                  <option value="5">1706</option>
+                  <option value="5">1707</option>
+                  <option value="5">1708</option>
+                  <option value="5">1709</option>
+                  <option value="5">1710</option>
+                  <option value="5">1711</option>
+                  <option value="5">1712</option>
+                  <option value="5">1713</option>
+                  <option value="5">1714</option>
+                  <option value="5">1715</option>
+                   
+             </select>
+                    <br><br>
+                    <input type="submit" onclick="EditSuc()" style="padding: 7px 9px; border: none; background-color: aqua; " value="Submit" >
+                    <hr>
+                     
+                    <p>Or Delete User</p>
+                    <input type="Submit"  onclick="DelSuc()"    style="padding: 7px 9px; border: none; background-color: aqua; " value="Delete">
+                    <br>         <br>         <br>
+                    
+                    <button class="cancelbtn"   type="button" onclick="document.getElementById('EditStud').style.display='none'" >Close</button> 
+              
+                    <br>
+                    </div>
+
+                     
+                     </div> 
+        </div> 
+
+
+        <div id="PCADD" class="PCADDs"> 
+          <div class="AdToolinner">
+            <div class="AdTool-header">
+               
+            </div>
+                   
+                <div class="AdTool-body">
+                      <p>Add Properties</p>
+                      <br>
+                      <label for="EditPC">Enter Mail</label>
+                      <input type="text" id="EditPC" value="gt201900484">
+                      <label for="enterPC">PC ID</label>
+                      <input type="text" id="enterPC" value="1706">
+                      <label for="EditMaxT">Time</label>
+                      <input type="text" id="EditMaxtT" value="30mins">
+                       
+                      <br>
+                      <input type="submit" value="Submit">
+                      <hr>
+                       
+                      <p>Denied User</p>
+                      <input type="Submit" value="Denied">
+                      <br>
+                      
+                      <button class="cancelbtn" style="float: right;"  type="button" onclick="document.getElementById('PCADD').style.display='none'" >Close</button> 
+                
+                      <br>
+                      </div>
+  
+                       
+                       </div> 
+          </div> 
+
+
+        <div id="Editpc" class="editlaboverview"> 
+          <div class="AdToolinner">
+            <div class="AdTool-header">
+               
+            </div>
+                   
+                <div class="AdTool-body">
+                  <p>Left Time : 30 mins</p> 
+                      <p>Status :Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;">  </p> <br>
+                      <select name="RoomId" id="wala" style="padding: 5px 5px; ">
+                        <option value="None">Set Time</option>
+                        <option value="5">5 Minutes</option>
+                        <option value= "10">10  Minutes</option>
+                        <option value= "15">15  Minutes</option>
+                        <option value= "20">20  Minutes</option>
+                        <option value= "25">25  Minutes</option>
+                        <option value= "30">30  Minutes</option>
+                        <option value= "1hrs">1 Hour </option>
+                   </select><input type="submit" onclick="addss()" value="Submit" style="padding: 8px 10px; "><br>
+                      <hr>
+                      <p>Commands  </p>
+                       <input type="submit" value="Shutdown" onclick="shut()" style="padding: 8px 10px; " >
+                       <input type="submit" value="Restart" onclick="rest()" style="padding: 8px 10px; ">
+                      <br>
+                       
+                      <hr>
+                       
+                      <p>Or Delete Unit</p>
+                      <input type="Submit" value="Delete" onclick="Delshut()" style="padding: 8px 10px; ">
+                      <br>
+                      
+                      <button class="cancelbtn" style="float: right;"  type="button" onclick="document.getElementById('Editpc').style.display='none'" >Close</button> 
+                
+                      <br>
+                      </div>
+  
+                       
+                       </div> 
+          </div> 
+      </div> 
+
+      
+     
+<script> 
+
+
+function adds(){
+  alert("Reserve Unit Succesfull!")
+  location.href="Lab_Admin.html";
+}
+
+
+
+function addss(){
+  alert("Edit Time Unit Succesfull!")
+  location.href="Lab_Admin.html";
+}
+
+function shut(){
+  alert("The Computer Unit Will Shutdown !")
+  location.href="Lab_Admin.html";
+}
+
+function Delshut(){
+  alert("The Computer Unit Deleted !")
+  location.href="Lab_Admin.html";
+}
+
+function rest(){
+  alert("The Computer Unit Will Restart !")
+  location.href="Lab_Admin.html";
+}
+    var AdminTool = document.getElementById("AdminTool") 
+    var btn = document.getElementById("OpenTools") 
+    
+ 
+      btn.onclick = function() {
+        AdminTool.style.display = "block";
+      }  
+
+    var Notif = document.getElementById("Notif") 
+      var btn = document.getElementById("Notifs") 
+    
+    
+    btn.onclick = function() {
+      Notif.style.display = "block";
+ } 
+
+
+ 
+ var EditStud = document.getElementById("EditStud") 
+      var btn = document.getElementById("EditStuds")  
+    btn.onclick = function() {
+      EditStud.style.display = "block";
+ } 
+
+ var EditStud = document.getElementById("EditStud") 
+      var btn = document.getElementById("EditStudss")  
+    btn.onclick = function() {
+      EditStud.style.display = "block";
+ } 
+
+ var EditStud = document.getElementById("EditStud") 
+      var btn = document.getElementById("EditStudsss")  
+    btn.onclick = function() {
+      EditStud.style.display = "block";
+ } 
+
+ var EditStud = document.getElementById("EditStud") 
+      var btn = document.getElementById("EditStudssss")  
+    btn.onclick = function() {
+      EditStud.style.display = "block";
+ } 
+
+ var EditStud = document.getElementById("EditStud") 
+      var btn = document.getElementById("EditStudsssss")  
+    btn.onclick = function() {
+      EditStud.style.display = "block";
+ } 
+
+
+ var EditStud = document.getElementById("EditStud") 
+      var btn = document.getElementById("EditStudssssss")  
+    btn.onclick = function() {
+      EditStud.style.display = "block";
+ } 
+
+ /*Edit pc tool*/
+
+ var Editpc = document.getElementById("Editpc") 
+      var btn = document.getElementById("EditPC")  
+    btn.onclick = function() {
+      Editpc.style.display = "block";
+ } 
+ 
+ var Editpc = document.getElementById("Editpc") 
+      var btn = document.getElementById("EditPC2")  
+    btn.onclick = function() {
+      Editpc.style.display = "block";
+ } 
+
+ var Editpc = document.getElementById("Editpc") 
+      var btn = document.getElementById("EditPC3")  
+    btn.onclick = function() {
+      Editpc.style.display = "block";
+ } 
+
+ var Editpc = document.getElementById("Editpc") 
+      var btn = document.getElementById("EditPC4")  
+    btn.onclick = function() {
+      Editpc.style.display = "block";
+ } 
+
+ var Editpc = document.getElementById("Editpc") 
+      var btn = document.getElementById("EditPC5")  
+    btn.onclick = function() {
+      Editpc.style.display = "block";
+ } 
+
+ 
+ var Editpc = document.getElementById("Editpc") 
+      var btn = document.getElementById("EditPC6")  
+    btn.onclick = function() {
+      Editpc.style.display = "block";
+ } 
+
+
+ function EditSuc() {
+   alert("Modified Unit Successfull")
+   location.href="Lab_Admin.html";
+ }
+
+ function DelSuc() {
+   alert("Delete User Successfull")
+   location.href="Lab_Admin.html";
+ }
+
+ var PCADD = document.getElementById("PCADD") 
+      var btn = document.getElementById("PC6")  
+    btn.onclick = function() {
+      PCADD.style.display = "block";
+ } 
+ 
+ //Notification
+
+var close = document.getElementsByClassName("closebtn");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+
+//admin
+function contentoptn(evt, Tabname) {
+  var i, AdminMenucontent, AdminMenulinks;
+  AdminMenucontent = document.getElementsByClassName("AdminMenucontent");
+  for (i = 0; i < AdminMenucontent.length; i++) {
+    AdminMenucontent[i].style.display = "none";
+  }
+  AdminMenulinks = document.getElementsByClassName("AdminMenulinks");
+  for (i = 0; i < AdminMenulinks.length; i++) {
+    AdminMenulinks[i].className = AdminMenulinks[i].className.replace(" active", "");
+  }
+  document.getElementById(Tabname).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+
+function searchmsg(){
+  alert("Searching PC ID!")
+} 
+</script>
+ 
+</body>  
+ 
+</html>
+

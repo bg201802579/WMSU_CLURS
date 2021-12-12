@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="./image/906343.png" type="imageIcon" >
+<link rel="stylesheet" href="./css/superadmin.css">
+ <title>Super Admin</title>
+</head>
+  <body>
+    <header> 
+      <div class="Menubar"> 
+        <img class="logo" src="./image/wmsulogo.png" alt="wmsulogo"> 
+            <h1>  Super Administrator</h1> 
+                  <div class="menus"  >
+                    <a href="./index.html" > Log out</a>  
+                    <a id="OpenTools" >Tools </a>
+                    <a id="Notifs" > <img src="./image/bell2.png" alt="notif Bell" width="30" height="30"> </a>
+                  </div> 
+      </div> 
+    </header>
+
+    <div class="main">
+      
+                
+      <div id="AdminTool" class="AdTool"> 
+        <div class="AdToolinner">
+          <div class="AdTool-header">
+            <img class="ToolPic" src="./image/906343.png" alt="about us temp logo" > 
+          </div>
+                <div class="HeadText">
+                  <h2>Super Admin Dashboard</h2>
+                </div> 
+              <div class="AdTool-body">
+                                <div class="AdminToolls">
+                                   <div class="AdminMenu">
+                                    <button class="AdminMenulinks" onmouseover="contentoptn(event, 'Home')"> <img src="./image/HomeAdminTool.png" alt="" width="30px" height="30px" style="position: relative; top: 2px;"> Home</button>
+                                    <button class="AdminMenulinks" onmouseover="contentoptn(event, 'CreateCollegeAdmin')"> <img src="./image/CreateAdminTool.png" alt="" width="30px" height="30px" style="position: relative; top: 2px;"> Create</button>
+                                    <button class="AdminMenulinks" onmouseover="contentoptn(event, 'EditCollegeAdmin')"> <img src="./image/EditAdminTool.png" alt="" width="30px" height="30px" style="position: relative; top: 2px;"> Edit</button>
+                                    <button class="AdminMenulinks" onmouseover="contentoptn(event, 'DelCollegeAdmin')"> <img src="./image/how to.png" alt="" width="30px" height="30px" style="position: relative; top: 3px;"> List View</button>
+                                  </div>
+
+                                  <div id="Home" class="AdminMenucontent">
+                                    
+                                    
+                                                  <table id="HomeAdminTool">
+                                                    <tr>
+                                                      
+                                                      <th class="ColName">Id</th>
+                                                      <th class="ColName">College Admin</th>
+                                                      <th class="CollCourse">College </th>
+                                                      <th class="ColNum">Room Number</th>
+                                                      <th class="ColUnit">Units</th>
+                                                      <th class="ColIndi">Status</th>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>00000</td>
+                                                      <td>PhD. Roderic P. Go </td>
+                                                      <td>institute Computer Studies</td>
+                                                      <td>RN908</td>
+                                                      <td>15</td>
+                                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>00001</td>
+                                                      <td>Dr. Raul T. Alburo</td>
+                                                      <td>College of Enginerring</td>
+                                                      <td>RN878</td>
+                                                      <td>15</td>
+                                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>00002</td>
+                                                      <td>Mr. Fredie M. Omar</td>
+                                                      <td>College of Nursing</td>
+                                                      <td>RN348</td>
+                                                      <td>12</td>
+                                                      <td>Online <img src="./online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>00003</td>
+                                                      <td>Dr. Blancaflor R. Jimeno</td>
+                                                      <td>College of Physical Edu.</td>
+                                                      <td>RN908</td>
+                                                      <td>15</td>
+                                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>00004</td>
+                                                      <td>Asso. Prof .Marnin A. Maulion</td>
+                                                      <td>College of Science and Matemathics.</td>
+                                                      <td>RN708</td>
+                                                      <td>10</td>
+                                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>00005</td>
+                                                      <td>Dr. Ricardo A. Somblingo</td>
+                                                      <td>College of Education.</td>
+                                                      <td>RN356</td>
+                                                      <td>15</td>
+                                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>1706</td>
+                                                      <td>PhD. Roderic P. Go</td>
+                                                      <td>College of Computer Studies</td>
+                                                      <td>RN909</td>
+                                                      <td>15</td>
+                                                      <td>Offline <img src="./image/onnline.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                                    </tr>
+                                                    
+                                                  </table>
+                                  </div>
+
+                                  <div id="CreateCollegeAdmin" class="AdminMenucontent">
+                                    <h2 style="text-align: center;">--- Create College Admin ---</h2>
+                                               
+                                              <input type="text" id="colId" value="College Appoint Id " style="padding: 10px 4px;"> <input type="text" id="Rn#" value="Create Room Number" style="padding: 10px 4px;"> <br> <br>
+                                              <br> 
+                                              <input type="text" id="colFname" value="First Name" style="padding: 10px 4px;"> 
+                                               
+                                              <input type="text" value="Last Name" id="colLname" style="padding: 10px 4px;">
+                                              <br><br>
+                                              
+                                      <select name="RoomId" id="wala" style="padding: 10px 8px; ">
+                                        <option value="None"  >Choose College to Assign</option>
+                                        <option value="None"  >  College of Agriculture </option>
+                                        <option value="None"  >  College of  Architecture</option>
+                                        <option value="None"  >  College of  Asian and Islamic Studies</option>
+                                        <option value="None"  >  College of  Criminal and Justice</option>
+                                        <option value="None"  >  College of  Engineering</option>
+                                        <option value="None"  >  College of  Forestry and Environtmental Projects</option>
+                                        <option value="None"  >  College of  Home Economics</option>
+                                        <option value="None"  >  College of  Law</option>
+                                        <option value="None"  >  College of  Liberal Arts</option>
+                                        <option value="None"  >  College of  Nursing</option>
+                                        <option value="None"  >  College of  Public Administrator and Development Studies</option>
+                                        <option value="None"  >  College of  Physical Education</option>
+                                        <option value="None"  >  College of  Science and Mathematics</option>
+                                        <option value="None"  >  College of  Social Work and Community Dev</option>
+                                        <option value="None"  >  College of  teachers Education</option>
+                                        <option value="None"  >  Institute of Computer Studies</option>
+                                      </select>
+                                      <select name="RoomId" id="wala" style="padding: 10px 8px; ">
+                                        <option value="None"  >Number of Units to Hold</option>
+                                        <option value="None"  > 1 PC Units</option>
+                                        <option value="None"  > 2 PC Units</option> 
+                                        <option value="None"  > 3 PC Units</option>
+                                        <option value="None"  > 4 PC Units</option>
+                                        <option value="None"  > 5 PC Units</option>
+                                        <option value="None"  > 6 PC Units</option> 
+                                        <option value="None"  > 7 PC Units</option>
+                                        <option value="None"  > 8 PC Units</option>
+                                        <option value="None"  > 9 PC Units</option>
+                                        <option value="None"  > 10 PC Units</option> 
+                                        <option value="None"  > 11 PC Units</option>
+                                        <option value="None"  > 12 PC Units</option>
+                                        <option value="None"  > 13 PC Units</option>
+                                        <option value="None"  > 14 PC Units</option> 
+                                        <option value="None"  > 15 PC Units</option>
+                                         
+                                      </select>
+                                      <br><br>
+                                      <button style="border: 1px black; padding: 20px 30px; background-color:#475c5f ; color: white;" onclick="msg()">Submit</button>
+                                      
+                                      <br><br><br><br>
+                                  </div>
+
+                                  <div id="EditCollegeAdmin" class="AdminMenucontent">
+                                    <h3>Edit College Admin</h3>
+                                    <input type="text" id="colId" value="Search CollegeAdmin ID" style="padding: 10px 4px;"   > <img src="./image/search.png" onclick="searchmsg()" alt="search" width="33px" height="33px" style="position: relative; top: 17px;">  
+                                    <hr>
+                                    <table id="HomeAdminTool">
+                                      <tr>
+                                        
+                                        <th class="ColName">College Id</th>
+                                        <th class="ColName">College Admin</th>
+                                        <th class="ColName">College Dept</th>
+                                        <th class="ColName">Room Number</th>
+                                        <th>Units</th>
+                                        <th class="ColName">Other</th>
+                                         
+                                         
+                                         
+                                      </tr>
+                                       
+                                      <tr>
+                                        <td>00000</td>
+                                        <td>PhD. Roderic P. Go </td>
+                                        <td>institute Computer Studies</td>
+                                        <td>RN908</td>
+                                        <td>15</td>
+                                        <td style="color: red;"> <a id="edit1">Edit</a> </td>
+                                         </tr>
+                                      <tr>
+                                        <td>00001</td>
+                                        <td>Dr. Raul T. Alburo</td>
+                                        <td>College of Enginerring</td>
+                                        <td>RN878</td>
+                                        <td>15</td>
+                                        <td style="color: red;"> <a id="edit2">Edit</a> </td>
+                                         </tr>
+                                      <tr>
+                                        <td>00002</td>
+                                        <td>Mr. Fredie M. Omar</td>
+                                        <td>College of Nursing</td>
+                                        <td>RN348</td>
+                                        <td>12</td>
+                                        <td style="color: red;"> <a id="edit3">Edit</a> </td>
+                                         </tr>
+                                      <tr>
+                                        <td>00003</td>
+                                        <td>Dr. Blancaflor R. Jimeno</td>
+                                        <td>College of Physical Edu.</td>
+                                        <td>RN908</td>
+                                        <td>15</td>
+                                        <td style="color: red;"> <a id="edit4">Edit</a> </td>
+                                        </tr>
+                                      <tr>
+                                        <td>00004</td>
+                                        <td>Asso. Prof .Marnin A. Maulion</td>
+                                        <td>College of Science and Matemathics.</td>
+                                        <td>RN708</td>
+                                        <td>10</td>
+                                        <td style="color: red;"> <a id="edit5">Edit</a> </td>
+                                        </tr>
+                                      <tr>
+                                        <td>00005</td>
+                                        <td>Dr. Ricardo A. Somblingo</td>
+                                        <td>College of Education.</td>
+                                        <td>RN356</td>
+                                        <td>15</td>
+                                        <td style="color: red;"> <a id="edit6">Edit</a> </td>
+                                          </tr>
+                                      <tr>
+                                        <td>1706</td>
+                                        <td>PhD. Roderic P. Go</td>
+                                        <td>College of Computer Studies</td>
+                                        <td>RN909</td>
+                                        <td>15</td>
+                                        <td style="color: red;"> <a id="edit7">Edit</a> </td>
+                                         </tr>
+                                       
+                                         
+                                         
+                                            
+                                      
+                                    </table>
+                                    
+                                  </div>
+
+                                  <div id="DelCollegeAdmin" class="AdminMenucontent">
+                                     <h3 style=" text-align: center; ">--- Overview List of Active Units ---</h3>
+                                     <table id="HomeAdminTool">
+                                      <tr>
+                                        
+                                        <th class="ColName">Room Number</th>
+                                        <th class="ColName">PC Number</th>
+                                        <th class="ColName">College Dept</th>
+                                        <th class="CollCourse">User </th>
+                                        <th class="ColNum">Lab Admin</th> 
+                                        <th class="ColIndi">Status</th>
+                                      </tr>
+                                      <tr>
+                                        <td>RN908</td> 
+                                        <td>PC1</td>
+                                        <td>institute Computer Studies</td>
+                                        <td style="color: rgb(11, 20, 70);" id="profile1" >Andromedae siruis</td>
+                                        <td>L-A :Jaydee Ballaho</td>
+                                        <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                      </tr> 
+                                      <tr>
+                                        <td>RN908</td> 
+                                        <td>PC2</td>
+                                        <td>institute Computer Studies</td>
+                                        <td style="color: rgb(11, 20, 70);" id="profile2">Aaron Melano</td>
+                                        <td>L-A :Jaydee Ballaho</td>
+                                        <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                      </tr> 
+                                      <tr>
+                                        <td>RN908</td> 
+                                        <td>PC3</td>
+                                        <td>institute Computer Studies</td>
+                                        <td style="color: rgb(11, 20, 70);" id="profile3">Alasa Jovelyn	</td>
+                                        <td>L-A :Jaydee Ballaho</td>
+                                        <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                      </tr> 
+                                      <tr>
+                                        <td>RN908</td> 
+                                        <td>PC4</td>
+                                        <td>institute Computer Studies</td>
+                                        <td style="color: rgb(11, 20, 70);" id="profile4">Lester Dela Torre</td>
+                                        <td>L-A :Jaydee Ballaho</td>
+                                        <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                      </tr> 
+                                      <tr>
+                                        <td>RN908</td> 
+                                        <td>PC5</td>
+                                        <td>institute Computer Studies</td>
+                                        <td style="color: rgb(11, 20, 70);" id="profile5">Oroscco Pilar</td>
+                                        <td>L-A :Jaydee Ballaho</td>
+                                        <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                      </tr> 
+                                      <tr>
+                                        <td>RN908</td> 
+                                        <td>PC6</td>
+                                        <td>institute Computer Studies</td>
+                                        <td style="color: rgb(11, 20, 70);" id="profile6">Ceejay Ceejay</td>
+                                        <td>L-A :Jaydee Ballaho</td>
+                                        <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                      </tr> 
+                                      <tr>
+                                        <td>RN878</td> 
+                                        <td>PC1</td>
+                                        <td> College of Enginerring</td>
+                                        <td style="color: rgb(11, 20, 70);">Leonardo kim</td>
+                                        <td>L-A :John Carl Tuazon</td>
+                                        <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                      </tr>
+                                      <tr>
+                                        <td>RN878</td> 
+                                        <td>PC2</td>
+                                        <td> College of Enginerring</td>
+                                        <td style="color: rgb(11, 20, 70);">Jazel Bagondol</td>
+                                        <td>L-A :John Carl Tuazon</td>
+                                        <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                      </tr>
+                                      <tr>
+                                        <td>RN878</td> 
+                                        <td>PC3</td>
+                                        <td> College of Enginerring</td>
+                                        <td style="color: rgb(11, 20, 70);">Adimuktar Timbng</td>
+                                        <td>L-A :John Carl Tuazon</td>
+                                        <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                      </tr>
+                                      <tr>
+                                        <td>RN878</td> 
+                                        <td>PC4</td>
+                                        <td> College of Enginerring</td>
+                                        <td style="color: rgb(11, 20, 70);">Adamin Ibrahim</td>
+                                        <td>L-A :John Carl Tuazon</td>
+                                        <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                      </tr><tr>
+                                        <td>RN878</td> 
+                                        <td>PC5</td>
+                                        <td> College of Enginerring</td>
+                                        <td style="color: rgb(11, 20, 70);">Keeno Valmores</td>
+                                        <td>L-A :John Carl Tuazon</td>
+                                        <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                      </tr><tr>
+                                        <td>RN878</td> 
+                                        <td>PC6</td>
+                                        <td> College of Enginerring</td>
+                                        <td style="color: rgb(11, 20, 70);">Micael Uy</td>
+                                        <td>L-A :John Carl Tuazon</td>
+                                        <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                      </tr><tr>
+                                        <td>RN878</td> 
+                                        <td>PC7</td>
+                                        <td> College of Enginerring</td>
+                                        <td style="color: rgb(11, 20, 70);">leah Abuy</td>
+                                        <td>L-A :John Carl Tuazon</td>
+                                        <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                      </tr> 
+                                    </tr><tr>
+                                      <td>RN348</td> 
+                                      <td>PC1</td>
+                                      <td> 	College of Nursing</td>
+                                      <td style="color: rgb(11, 20, 70);">Liza Balatbat</td>
+                                      <td>L-A :Justine Alfad</td>
+                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                    </tr> 
+                                    <tr>
+                                      <td>RN348</td> 
+                                      <td>PC2</td>
+                                      <td> 	College of Nursing</td>
+                                      <td style="color: rgb(11, 20, 70);">Maria Alfaro</td>
+                                      <td>L-A :Justine Alfad</td>
+                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                    </tr> 
+                                    <tr>
+                                      <td>RN348</td> 
+                                      <td>PC3</td>
+                                      <td> 	College of Nursing</td>
+                                      <td style="color: rgb(11, 20, 70);">Maricar Galvez</td>
+                                      <td>L-A :Justine Alfad</td>
+                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                    </tr> 
+                                    <tr>
+                                      <td>RN348</td> 
+                                      <td>PC4</td>
+                                      <td> 	College of Nursing</td>
+                                      <td style="color: rgb(11, 20, 70);">Mark langki</td>
+                                      <td>L-A :Justine Alfad</td>
+                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                    </tr> 
+                                    <tr>
+                                      <td>RN348</td> 
+                                      <td>PC5</td>
+                                      <td> 	College of Nursing</td>
+                                      <td style="color: rgb(11, 20, 70);">Jose Enriquez</td>
+                                      <td>L-A :Justine Alfad</td>
+                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                    </tr> 
+
+                                    <tr>
+                                      <td>RN910</td> 
+                                      <td>PC1</td>
+                                      <td> College of Education	 </td>
+                                      <td style="color: rgb(11, 20, 70);">Geral Angeles</td>
+                                      <td>L-A :Pie Abalos</td>
+                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                    </tr>
+                                    <tr>
+                                      <td>RN910</td> 
+                                      <td>PC2</td>
+                                      <td> College of Education	 </td>
+                                      <td style="color: rgb(11, 20, 70);">Pee kang</td>
+                                      <td>L-A :Pie Abalos</td>
+                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                    </tr>
+                                    <tr>
+                                      <td>RN910</td> 
+                                      <td>PC4</td>
+                                      <td> College of Education	 </td>
+                                      <td style="color: rgb(11, 20, 70);">Reynalin Siason</td>
+                                      <td>L-A :Pie Abalos</td>
+                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                    </tr>
+                                    <tr>
+                                      <td>RN910</td> 
+                                      <td>PC5</td>
+                                      <td> College of Education	 </td>
+                                      <td style="color: rgb(11, 20, 70);">Rhogie Bello</td>
+                                      <td>L-A :Pie Abalos</td>
+                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                    </tr>
+                                    <tr>
+                                      <td>RN910</td> 
+                                      <td>PC6</td>
+                                      <td> College of Education	 </td>
+                                      <td style="color: rgb(11, 20, 70);">Selina Vka Jhon</td>
+                                      <td>L-A :Pie Abalos</td>
+                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                    </tr>
+                                    <tr>
+                                      <td>RN910</td> 
+                                      <td>PC7</td>
+                                      <td> College of Education	 </td>
+                                      <td style="color: rgb(11, 20, 70);">Gomez Selina</td>
+                                      <td>L-A :Pie Abalos</td>
+                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                    </tr>
+                                    <tr>
+                                      <td>RN910</td> 
+                                      <td>PC8</td>
+                                      <td> College of Education	 </td>
+                                      <td style="color: rgb(11, 20, 70);">Rico Bahandi</td>
+                                      <td>L-A :Pie Abalos</td>
+                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                    </tr>
+                                    <tr>
+                                      <td>RN910</td> 
+                                      <td>PC9</td>
+                                      <td> College of Education	 </td>
+                                      <td style="color: rgb(11, 20, 70);" id="profile7">Khyzel Paraizo</td>
+                                      <td>L-A :Pie Abalos</td>
+                                      <td>Online <img src="./image/online.png" alt="" width="15px" height="15px" style="position: relative; top: 2px;"> </td>
+                                    </tr>
+                                     
+                                    </table>
+
+
+
+
+                                  </div>
+
+                                  <div class="clearfix"></div>
+                                </div>       
+                
+                <br><br>
+                    <button class="cancelbtn" style="float: right;"  type="button" onclick="document.getElementById('AdminTool').style.display='none'" >Close</button> 
+              </div> 
+        </div> 
+      </div>
+
+
+
+      <div id="ViewProfile" class="Profileoverview"> 
+        <div class="AdToolinner">
+          <div class="AdTool-header">    </div>
+                 
+              <div class="AdTool-body">
+                 <h3 style="text-align: center;">--- Profile ---</h3> <hr>
+                 <br> 
+                 <p align="center"> <img src="./image/UserAvatar.png" alt="user"   width="70px" height="70px"> <br><br> <b>  <br> User Profile 
+                <br><br> Name of The College Department <br> <br>   gtSampleemail@wmsu.edu.ph </b></p>
+
+
+                    </div>
+
+                    <br> 
+                    <button class="cancelbtn" style="float: right;"  type="button" onclick="document.getElementById('ViewProfile').style.display='none'" >Close</button> 
+                     </div> 
+        </div> 
+
+
+
+
+
+      <div id="EditTools" class="editlaboverview"> 
+        <div class="AdToolinner">
+          <div class="AdTool-header">
+             
+          </div>
+                 
+              <div class="AdTool-body">
+                <p>Edit Properties</p> 
+                 
+                 <label for="Accname">Edit Name</label>
+                 <input type="text " id="Accname"  >
+                 <br>
+                 <br>
+                 <select name="RoomId" id="wala" style="padding: 5px 3px; ">
+                  <option value="None"  >Number of Units to Hold</option>
+                  <option value="None"  > 1 PC Units</option>
+                  <option value="None"  > 2 PC Units</option> 
+                  <option value="None"  > 3 PC Units</option>
+                  <option value="None"  > 4 PC Units</option>
+                  <option value="None"  > 5 PC Units</option>
+                  <option value="None"  > 6 PC Units</option> 
+                  <option value="None"  > 7 PC Units</option>
+                  <option value="None"  > 8 PC Units</option>
+                  <option value="None"  > 9 PC Units</option>
+                  <option value="None"  > 10 PC Units</option> 
+                  <option value="None"  > 11 PC Units</option>
+                  <option value="None"  > 12 PC Units</option>
+                  <option value="None"  > 13 PC Units</option>
+                  <option value="None"  > 14 PC Units</option> 
+                  <option value="None"  > 15 PC Units</option>
+                  
+
+                  </select>
+
+                  <br><br>
+                 <button type="submit" value="Submit"  onclick="msgchange() " style="border: none; padding: 9px 11px; background-color:#475c5f; color: white;" >Submit</button>
+                 <br><br><hr>Delete Selected Admin <br> <br> <button type="submit" onclick="delmsg()" style="border: none; padding: 9px 11px; background-color:#475c5f; color: white;">Delete</button>
+                 <br> 
+                 <button class="cancelbtn" style="float: right;"  type="button" onclick="document.getElementById('EditTools').style.display='none'" >Close</button> 
+                 <br><br>
+
+
+                    </div>
+
+                     
+                     </div> 
+        </div> 
+
+
+      <div id="Notif" class="notif"> 
+        <div class="AdToolinner">
+          <div class="AdTool-header">
+             
+          </div>
+                 
+              <div class="AdTool-body">
+                    <p>Your Notification</p> <button class="cancelbtn" style="float: right;"  type="button" onclick="document.getElementById('Notif').style.display='none'" >Close</button>
+                    
+                    <br><br>
+
+                    <div class="NotifInfo success">
+                      <span class="closebtn">&times;</span>  
+                      <b>Succes Login</b> <br> <br> Good day Admin, Welcome to the System.
+                    </div> 
+
+                    
+
+                    <div class="NotifInfo warning">
+                      <span class="closebtn">&times;</span>  
+                      <b>Attention !</b> <br>You have Pending Notification.
+                    </div>
+
+                    <div class="NotifInfo info">
+                      <span class="closebtn">&times;</span>  
+                        The College of Biology is watig for your Approval .
+                    </div>
+                    <div class="NotifInfo success">
+                      <span class="closebtn">&times;</span>  
+                       You opproved Set Pc for the ICS .
+                    </div>
+
+                    <div class="NotifInfo info">
+                      <span class="closebtn">&times;</span>  
+                       <b>College Admin of Biology</b> <br> "Sir We are waiting po For your Approval  "   .
+                    </div>
+
+                     
+                    
+                     
+              </div> 
+        </div> 
+      </div> 
+</div>
+
+
+
+<script> 
+
+
+
+var ViewProfile = document.getElementById("ViewProfile") 
+var btn = document.getElementById("profile1") 
+
+
+btn.onclick = function() {
+  ViewProfile.style.display = "block";
+} 
+
+
+var ViewProfile = document.getElementById("ViewProfile") 
+var btn = document.getElementById("profile2") 
+
+
+btn.onclick = function() {
+  ViewProfile.style.display = "block";
+} 
+
+var ViewProfile = document.getElementById("ViewProfile") 
+var btn = document.getElementById("profile3") 
+
+
+btn.onclick = function() {
+  ViewProfile.style.display = "block";
+} 
+
+var ViewProfile = document.getElementById("ViewProfile") 
+var btn = document.getElementById("profile4") 
+
+
+btn.onclick = function() {
+  ViewProfile.style.display = "block";
+} 
+var ViewProfile = document.getElementById("ViewProfile") 
+var btn = document.getElementById("profile5") 
+
+
+btn.onclick = function() {
+  ViewProfile.style.display = "block";
+} 
+var ViewProfile = document.getElementById("ViewProfile") 
+var btn = document.getElementById("profile6") 
+
+
+btn.onclick = function() {
+  ViewProfile.style.display = "block";
+} 
+var ViewProfile = document.getElementById("ViewProfile") 
+var btn = document.getElementById("profile7") 
+
+
+btn.onclick = function() {
+  ViewProfile.style.display = "block";
+} 
+
+
+
+
+function msgchange(){
+  alert("College Admin Updated!")
+  location.href="Super_Admin.html"
+}
+function delmsg(){
+  alert("Delete Id Succesfull!")
+  location.href="Super_Admin.html"
+}
+function searchmsg(){
+  alert("ID You Request now Searching!")
+}
+
+
+function msg(){
+  alert("College Admin saved")
+  location.href="Super_Admin.html";
+}
+var AdminTool = document.getElementById("AdminTool") 
+var btn = document.getElementById("OpenTools") 
+
+
+btn.onclick = function() {
+  AdminTool.style.display = "block";
+}  
+
+var Notif = document.getElementById("Notif") 
+var btn = document.getElementById("Notifs") 
+
+
+btn.onclick = function() {
+Notif.style.display = "block";
+} 
+
+
+
+
+var EditTools = document.getElementById("EditTools") 
+var btn = document.getElementById("edit1") 
+
+
+btn.onclick = function() {
+  EditTools.style.display = "block";
+} 
+
+var EditTools = document.getElementById("EditTools") 
+var btn = document.getElementById("edit2") 
+
+
+btn.onclick = function() {
+  EditTools.style.display = "block";
+} 
+var EditTools = document.getElementById("EditTools") 
+var btn = document.getElementById("edit3") 
+
+
+btn.onclick = function() {
+  EditTools.style.display = "block";
+} 
+var EditTools = document.getElementById("EditTools") 
+var btn = document.getElementById("edit4") 
+
+
+btn.onclick = function() {
+  EditTools.style.display = "block";
+} 
+var EditTools = document.getElementById("EditTools") 
+var btn = document.getElementById("edit5") 
+
+
+btn.onclick = function() {
+  EditTools.style.display = "block";
+} 
+var EditTools = document.getElementById("EditTools") 
+var btn = document.getElementById("edit6") 
+
+
+btn.onclick = function() {
+  EditTools.style.display = "block";
+} 
+var EditTools = document.getElementById("EditTools") 
+var btn = document.getElementById("edit7") 
+
+
+btn.onclick = function() {
+  EditTools.style.display = "block";
+} 
+
+//Notification
+
+var close = document.getElementsByClassName("closebtn");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+
+
+//Admin Tool
+
+function contentoptn(evt, cityName) {
+  var i, AdminMenucontent, AdminMenulinks;
+  AdminMenucontent = document.getElementsByClassName("AdminMenucontent");
+  for (i = 0; i < AdminMenucontent.length; i++) {
+    AdminMenucontent[i].style.display = "none";
+  }
+  AdminMenulinks = document.getElementsByClassName("AdminMenulinks");
+  for (i = 0; i < AdminMenulinks.length; i++) {
+    AdminMenulinks[i].className = AdminMenulinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>  
+
+</html>
+
